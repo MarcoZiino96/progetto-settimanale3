@@ -19,7 +19,6 @@ public class ProdottoBibliotecarioDao {
     public void saveProdottoBibliotecario(ProdottoBibliotecario c){
         EntityTransaction et = em.getTransaction();
         et.begin();
-
         em.persist(c);
         et.commit();
     }
@@ -38,13 +37,13 @@ public class ProdottoBibliotecarioDao {
 
     public List<ProdottoBibliotecario> getProductPerAnnoPubblicazione(String anno){
         Query q = em.createNamedQuery("getProductPerAnnoPubblicazione");
-        q.setParameter("annoPubblicazione", anno);
+        q.setParameter("anno", anno);
         return q.getResultList();
     }
 
     public List<ProdottoBibliotecario> getProductPerTitolo(String title){
         Query q = em.createNamedQuery("getLibroPerTitolo");
-        q.setParameter("titolo", "%"+title+"%");
+        q.setParameter("titolo", title);
          return q.getResultList();
     }
 }

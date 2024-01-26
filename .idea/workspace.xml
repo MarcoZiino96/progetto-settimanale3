@@ -7,9 +7,7 @@
     <list default="true" id="750d0550-eed7-40bf-a7b1-8b585cac170c" name="Changes" comment="definizione delle entita e strategia table-per-class adottata e implementazione dei metodi delete save and getbyid">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/epicode/MainArchivioBibliotecario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/epicode/MainArchivioBibliotecario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/epicode/dao/LibroDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/epicode/dao/LibroDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/epicode/dao/ProdottoBibliotecarioDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/epicode/dao/ProdottoBibliotecarioDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/epicode/entities/Libro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/epicode/entities/Libro.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/epicode/entities/ProdottoBibliotecario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/epicode/entities/ProdottoBibliotecario.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +84,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706282016765</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="definizione delle entita e strategia table-per-class adottata e implementazione dei metodi delete save and getbyid">
+      <option name="closed" value="true" />
+      <created>1706285329691</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1706285329692</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

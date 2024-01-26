@@ -10,7 +10,7 @@ import java.util.List;
 @Table(name = "prodotto_bibliotecario")
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 @NamedQuery(name="getProductPerAnnoPubblicazione", query="select c from ProdottoBibliotecario c where year(c.annoPubblicazione) = :anno")
-@NamedQuery(name="getLibroPerTitolo", query="select l from Libro l where l.titolo like :titolo")
+@NamedQuery(name="getLibroPerTitolo", query="select l from Libro l where upper(l.titolo) like upper(concat('%',:titolo, '%'))")
 public abstract class  ProdottoBibliotecario {
 
     @Id
@@ -26,6 +26,9 @@ public abstract class  ProdottoBibliotecario {
 
     @Column(name = "numero_pagine")
     private int numeroPagine;
+
+    @OneToOne(mappedBy = "elementoPrestato")
+    private Prestito prestito;
 
     public ProdottoBibliotecario(){}
 
@@ -67,4 +70,14 @@ public abstract class  ProdottoBibliotecario {
         this.numeroPagine = numeroPagine;
     }
 
+    @Override
+    public String toString() {
+        return "ProdottoBibliotecario{" +
+                "codiceIBNS=" + codiceIBNS +
+                ", titolo='" + titolo + '\'' +
+                ", annoPubblicazione=" + annoPubblicazione +
+                ", numeroPagine=" + numeroPagine +
+                ", prestito=" + prestito +
+                '}';
+    }
 }
