@@ -1,10 +1,9 @@
 package it.epicode.dao;
 
 import it.epicode.entities.Libro;
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.EntityManagerFactory;
-import jakarta.persistence.EntityTransaction;
-import jakarta.persistence.Persistence;
+import jakarta.persistence.*;
+
+import java.util.List;
 
 public class LibroDao {
     private EntityManagerFactory emf;
@@ -33,5 +32,11 @@ public class LibroDao {
         Libro c = getById(id);
         em.remove(c);
         et.commit();
+    }
+
+    public List<Libro> getLibroPerAutore(String autore){
+        Query q = em.createNamedQuery("getLibroPerAutore");
+        q.setParameter("autore", autore);
+        return q.getResultList();
     }
 }

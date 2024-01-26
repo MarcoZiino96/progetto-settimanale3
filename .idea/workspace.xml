@@ -4,27 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750d0550-eed7-40bf-a7b1-8b585cac170c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/epicode/MainArchivioBibliotecario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/epicode/dao/LibroDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/epicode/dao/PrestitoDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/epicode/dao/ProdottoBibliotecarioDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/epicode/dao/RivistaDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/epicode/dao/UtenteDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/epicode/entities/Libro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/epicode/entities/Periodicita.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/epicode/entities/Prestito.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/epicode/entities/ProdottoBibliotecario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/epicode/entities/Rivista.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/epicode/entities/Utente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+    <list default="true" id="750d0550-eed7-40bf-a7b1-8b585cac170c" name="Changes" comment="definizione delle entita e strategia table-per-class adottata e implementazione dei metodi delete save and getbyid">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/epicode/MainArchivioBibliotecario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/epicode/MainArchivioBibliotecario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/epicode/dao/LibroDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/epicode/dao/LibroDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/epicode/dao/ProdottoBibliotecarioDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/epicode/dao/ProdottoBibliotecarioDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/epicode/entities/Libro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/epicode/entities/Libro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/epicode/entities/ProdottoBibliotecario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/epicode/entities/ProdottoBibliotecario.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +78,20 @@
       <option name="presentableId" value="Default" />
       <updated>1706259736401</updated>
     </task>
+    <task id="LOCAL-00001" summary="definizione delle entita e strategia table-per-class adottata e implementazione dei metodi delete save and getbyid">
+      <option name="closed" value="true" />
+      <created>1706282016765</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1706282016765</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="definizione delle entita e strategia table-per-class adottata e implementazione dei metodi delete save and getbyid" />
+    <option name="LAST_COMMIT_MESSAGE" value="definizione delle entita e strategia table-per-class adottata e implementazione dei metodi delete save and getbyid" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

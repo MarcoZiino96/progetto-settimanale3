@@ -36,9 +36,15 @@ public class ProdottoBibliotecarioDao {
         et.commit();
     }
 
-    public List<ProdottoBibliotecario> getProductPerAnnoPubblicazione(LocalDate  anno){
+    public List<ProdottoBibliotecario> getProductPerAnnoPubblicazione(String anno){
         Query q = em.createNamedQuery("getProductPerAnnoPubblicazione");
         q.setParameter("annoPubblicazione", anno);
         return q.getResultList();
+    }
+
+    public List<ProdottoBibliotecario> getProductPerTitolo(String title){
+        Query q = em.createNamedQuery("getLibroPerTitolo");
+        q.setParameter("titolo", "%"+title+"%");
+         return q.getResultList();
     }
 }

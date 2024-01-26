@@ -2,12 +2,14 @@ package it.epicode.entities;
 
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.NamedQuery;
 import jakarta.persistence.Table;
 
 import java.time.LocalDate;
 
 @Entity
 @Table(name = "libro")
+@NamedQuery(name = "getLibroPerAutore", query="select l from Libro l where l.autore =:autore")
 public class Libro extends ProdottoBibliotecario{
 
     private  String autore;

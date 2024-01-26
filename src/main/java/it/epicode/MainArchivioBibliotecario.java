@@ -68,9 +68,19 @@ public class MainArchivioBibliotecario {
         //prestitoDao.savePrestito(p3);
         //prestitoDao.savePrestito(p4);
 
-        // ho creato una query in prodotto publicitario che mi cerca i prodotti per anno di publicazione
+        // ho creato una query in prodotto publicitario e creato il metodo getProcdutAnnoPubblicazione nella rispettiva classe Dao
+        // con il fine di cercare i prodotti per anno di publicazione
+       //prodottoBibliotecariodao.getProductPerAnnoPubblicazione("2024").stream().forEach(System.out::println);
 
-       prodottoBibliotecariodao.getProductPerAnnoPubblicazione("2024").stream().forEach(System.out::println);
+        // ho creato una query in prodotto publicitario e creato il metodo getProcdutAnnoTitolo nella rispettiva classe Dao
+        // con il fine di cercare i prodotti per titolo
+
+    //prodottoBibliotecariodao.getProductPerTitolo("mangiare").stream().forEach(System.out::println);
+
+        // ho creato una query in lIBRO e creato il metodo getlibroPerAnno nella rispettiva classe Dao
+        // con il fine di cercare i prodotti per autore
+
+      //  libroDao.getLibroPerAutore("disney").stream().forEach(c-> System.out.println(c));
 }
 
 

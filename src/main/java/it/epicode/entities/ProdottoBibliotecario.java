@@ -9,7 +9,8 @@ import java.util.List;
 @Entity
 @Table(name = "prodotto_bibliotecario")
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
-@NamedQuery(name="getProductPerAnnoPubblicazione", query="select c from ProdottoBibliotecario c where Extract( year from c.annoPubblicazione) = :anno")
+@NamedQuery(name="getProductPerAnnoPubblicazione", query="select c from ProdottoBibliotecario c where year(c.annoPubblicazione) = :anno")
+@NamedQuery(name="getLibroPerTitolo", query="select l from Libro l where l.titolo like :titolo")
 public abstract class  ProdottoBibliotecario {
 
     @Id
