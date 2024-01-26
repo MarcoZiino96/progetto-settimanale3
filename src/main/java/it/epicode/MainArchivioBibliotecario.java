@@ -92,7 +92,11 @@ public class MainArchivioBibliotecario {
 
         //ho creato una querynamed  getlibroPerAnno  in Prestito e  nella rispettiva classe Dao il metodo getlibroPerAnno
         //con il fine di cercare i prestiti per utente
-      prodottoBibliotecariodao.getPrestitiForUtente(1).stream().forEach(System.out::println);
+     // prodottoBibliotecariodao.getPrestitiForUtente(1).stream().forEach(System.out::println);
+
+
+        prestitoDao.getPrestitoScadutoEMancante().stream().forEach(System.out::println);
 }
+
 
 }

@@ -7,6 +7,7 @@ import java.time.LocalDate;
 
 @Entity
 @Table(name = "prestito")
+@NamedQuery(name="getPrestitoScadutoEMancante", query="select p from Prestito p where p.dataRestituzioneEffettiva  >  p.dataRestituzionePrevista or p.dataRestituzioneEffettiva is null")
 public class Prestito {
 
 

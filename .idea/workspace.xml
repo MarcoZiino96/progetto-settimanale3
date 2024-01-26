@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750d0550-eed7-40bf-a7b1-8b585cac170c" name="Changes" comment="definizione metodi ricerca per titolo,autore, e anno publicazione">
+    <list default="true" id="750d0550-eed7-40bf-a7b1-8b585cac170c" name="Changes" comment="metodo prestiti per id utente completato">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/epicode/MainArchivioBibliotecario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/epicode/MainArchivioBibliotecario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/epicode/dao/PrestitoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/epicode/dao/PrestitoDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/epicode/dao/ProdottoBibliotecarioDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/epicode/dao/ProdottoBibliotecarioDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/epicode/dao/UtenteDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/epicode/dao/UtenteDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/epicode/entities/Prestito.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/epicode/entities/Prestito.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/epicode/entities/ProdottoBibliotecario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/epicode/entities/ProdottoBibliotecario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/epicode/entities/Utente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/epicode/entities/Utente.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,13 +108,22 @@
       <option name="project" value="LOCAL" />
       <updated>1706289605369</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="metodo prestiti per id utente completato">
+      <option name="closed" value="true" />
+      <created>1706294007415</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1706294007416</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="definizione delle entita e strategia table-per-class adottata e implementazione dei metodi delete save and getbyid" />
     <MESSAGE value="definizione metodi ricerca per titolo,autore, e anno publicazione" />
-    <option name="LAST_COMMIT_MESSAGE" value="definizione metodi ricerca per titolo,autore, e anno publicazione" />
+    <MESSAGE value="metodo prestiti per id utente completato" />
+    <option name="LAST_COMMIT_MESSAGE" value="metodo prestiti per id utente completato" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

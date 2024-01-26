@@ -36,5 +36,8 @@ public class PrestitoDao {
         et.commit();
     }
 
-
+public List<Prestito>getPrestitoScadutoEMancante(){
+        Query q = em.createNamedQuery("getPrestitoScadutoEMancante");
+        return q.getResultList();
+    }
 }
