@@ -13,9 +13,11 @@ public class Utente {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @SequenceGenerator(name = "sequenza_clienti", initialValue = 0, allocationSize = 3)
-    private int numero_tessera;
+    @Column(name = "numero_tessera")
+    private int numeroTessera;
 
     private  String nome;
+
     private String cognome;
 
     @Column(name = "data_nascita")
@@ -37,7 +39,7 @@ public class Utente {
     @Override
     public String toString() {
         return
-                "numero_tessera=" + numero_tessera +
+                "numero_tessera=" + numeroTessera +
                 ", nome='" + nome + '\'' +
                 ", cognome='" + cognome + '\'' +
                 ", dataNascita=" + dataNascita;
@@ -51,11 +53,11 @@ public class Utente {
     }
 
     public int getNumero_tessera() {
-        return numero_tessera;
+        return numeroTessera;
     }
 
-    public void setNumero_tessera(int numero_tessera) {
-        this.numero_tessera = numero_tessera;
+    public void setNumero_tessera(int numeroTessera) {
+        this.numeroTessera = numeroTessera;
     }
 
     public String getNome() {
@@ -81,4 +83,5 @@ public class Utente {
     public void setDataNascita(LocalDate dataNascita) {
         this.dataNascita = dataNascita;
     }
+
 }

@@ -7,7 +7,6 @@ import java.time.LocalDate;
 
 @Entity
 @Table(name = "prestito")
-
 public class Prestito {
 
 

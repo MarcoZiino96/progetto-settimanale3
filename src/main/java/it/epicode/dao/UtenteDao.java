@@ -1,11 +1,11 @@
 package it.epicode.dao;
 
 import it.epicode.entities.Libro;
+import it.epicode.entities.ProdottoBibliotecario;
 import it.epicode.entities.Utente;
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.EntityManagerFactory;
-import jakarta.persistence.EntityTransaction;
-import jakarta.persistence.Persistence;
+import jakarta.persistence.*;
+
+import java.util.List;
 
 public class UtenteDao {
     private EntityManagerFactory emf;
@@ -35,4 +35,5 @@ public class UtenteDao {
         em.remove(c);
         et.commit();
     }
+
 }

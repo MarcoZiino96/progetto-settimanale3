@@ -68,22 +68,31 @@ public class MainArchivioBibliotecario {
         //prestitoDao.savePrestito(p3);
         //prestitoDao.savePrestito(p4);
 
-        // ho creato una query in prodotto publicitario e creato il metodo getProcdutAnnoPubblicazione nella rispettiva classe Dao
+        // ho creato una queryNamed getProcdutAnnoPubblicazione in prodotto publicitario e creato il metodo getProcdutAnnoPubblicazione nella rispettiva classe Dao
         // con il fine di cercare i prodotti per anno di publicazione
+
      // prodottoBibliotecariodao.getProductPerAnnoPubblicazione("2024").stream().forEach(System.out::println);
 
-        // ho creato una query in prodotto publicitario e creato il metodo getProcdutAnnoTitolo nella rispettiva classe Dao
+
+
+        // ho creato una queryNamed getProcdutAnnoTitolo  in prodotto publicitario e creato il metodo getProcdutAnnoTitolo nella rispettiva classe Dao
         // con il fine di cercare i prodotti per titolo
 
-       List<ProdottoBibliotecario> list = prodottoBibliotecariodao.getProductPerTitolo("mangiare");
-        System.out.println(list);
-
+      // List<ProdottoBibliotecario> list = prodottoBibliotecariodao.getProductPerTitolo("mangiare");
       //  System.out.println(list);
 
-        // ho creato una query in lIBRO e creato il metodo getlibroPerAnno nella rispettiva classe Dao
+
+
+        // ho creato una queryNamed getlibroPerAnno in lIBRO e creato il metodo getlibroPerAnno nella rispettiva classe Dao
         // con il fine di cercare i prodotti per autore
 
       //  libroDao.getLibroPerAutore("disney").stream().forEach(c-> System.out.println(c));
+
+
+
+        //ho creato una querynamed  getlibroPerAnno  in Prestito e  nella rispettiva classe Dao il metodo getlibroPerAnno
+        //con il fine di cercare i prestiti per utente
+      prodottoBibliotecariodao.getPrestitiForUtente(1).stream().forEach(System.out::println);
 }
 
 }
