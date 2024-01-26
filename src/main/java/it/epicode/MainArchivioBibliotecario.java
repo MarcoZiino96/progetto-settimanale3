@@ -71,31 +71,37 @@ public class MainArchivioBibliotecario {
         // ho creato una queryNamed getProcdutAnnoPubblicazione in prodotto publicitario e creato il metodo getProcdutAnnoPubblicazione nella rispettiva classe Dao
         // con il fine di cercare i prodotti per anno di publicazione
 
-     // prodottoBibliotecariodao.getProductPerAnnoPubblicazione("2024").stream().forEach(System.out::println);
+      prodottoBibliotecariodao.getProductPerAnnoPubblicazione("2000").stream().forEach(System.out::println);
 
+        System.out.println();
 
 
         // ho creato una queryNamed getProcdutAnnoTitolo  in prodotto publicitario e creato il metodo getProcdutAnnoTitolo nella rispettiva classe Dao
         // con il fine di cercare i prodotti per titolo
 
-      // List<ProdottoBibliotecario> list = prodottoBibliotecariodao.getProductPerTitolo("mangiare");
-      //  System.out.println(list);
+      List<ProdottoBibliotecario> list = prodottoBibliotecariodao.getProductPerTitolo("nemo");
+       System.out.println(list);
 
-
+        System.out.println();
 
         // ho creato una queryNamed getlibroPerAnno in lIBRO e creato il metodo getlibroPerAnno nella rispettiva classe Dao
         // con il fine di cercare i prodotti per autore
 
-      //  libroDao.getLibroPerAutore("disney").stream().forEach(c-> System.out.println(c));
+       libroDao.getLibroPerAutore("disney").stream().forEach(c-> System.out.println(c));
 
+        System.out.println();
 
-
-        //ho creato una querynamed  getlibroPerAnno  in Prestito e  nella rispettiva classe Dao il metodo getlibroPerAnno
+        //ho creato una querynamed  getlibroPerAnno  in Prodottobibliotecario e  nella rispettiva classe Dao il metodo getlibroPerAnno
         //con il fine di cercare i prestiti per utente
-     // prodottoBibliotecariodao.getPrestitiForUtente(1).stream().forEach(System.out::println);
 
+      prodottoBibliotecariodao.getElementoPrestatoForUtente(2).stream().forEach(System.out::println);
 
-        prestitoDao.getPrestitoScadutoEMancante().stream().forEach(System.out::println);
+        System.out.println();
+
+        //ho creato una querynamed  getPrestitoScadutoEMancante  in Prestito e  nella rispettiva classe Dao il metodo getPrestitoScadutoEMancante
+        //con il fine di cercare i prestiti scaduti e con mancato ritorno
+
+       prestitoDao.getPrestitoScadutoEMancante().stream().forEach(System.out::println);
 }
 
 

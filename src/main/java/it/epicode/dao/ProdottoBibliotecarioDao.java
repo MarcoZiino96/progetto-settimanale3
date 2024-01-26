@@ -48,8 +48,8 @@ public class ProdottoBibliotecarioDao {
 
 
     }
-    public List<ProdottoBibliotecario> getPrestitiForUtente(int id){
-        Query q = em.createNamedQuery("getPrestitiForUtente");
+    public List<ProdottoBibliotecario> getElementoPrestatoForUtente(int id){
+        Query q = em.createNamedQuery("getElementoPrestatoForUtente");
         q.setParameter("id", id);
         return q.getResultList();
     }

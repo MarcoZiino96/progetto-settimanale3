@@ -17,7 +17,7 @@ public class Rivista extends ProdottoBibliotecario{
 
         return
                 "codiceIbsn='" + getCodiceIBNS() + '\'' +
-                "annoPublicazione='" + getTitolo() + '\'' +
+                "annoPublicazione='" + getAnnoPubblicazione() + '\'' +
                 "titolo='" + getTitolo() + '\'' +
                 "numeroPagine='" + getNumeroPagine()+ '\''+
                 "periodicita=" + periodicita;

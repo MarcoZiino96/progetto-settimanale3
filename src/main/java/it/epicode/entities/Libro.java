@@ -43,7 +43,7 @@ public class Libro extends ProdottoBibliotecario{
     public String toString() {
 
         return "codiceIbsn='" + getCodiceIBNS() + '\'' +
-                "annoPublicazione='" + getTitolo() + '\'' +
+                "annoPublicazione='" + getAnnoPubblicazione() + '\'' +
                 "titolo='" + getTitolo() + '\'' +
                 "numeroPagine='" + getNumeroPagine()+ '\'' +
                 "autore='" + autore + '\'' +
