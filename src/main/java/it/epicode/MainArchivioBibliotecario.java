@@ -75,14 +75,15 @@ public class MainArchivioBibliotecario {
         // ho creato una query in prodotto publicitario e creato il metodo getProcdutAnnoTitolo nella rispettiva classe Dao
         // con il fine di cercare i prodotti per titolo
 
-        System.out.println( prodottoBibliotecariodao.getProductPerTitolo("mangiare"));
+       List<ProdottoBibliotecario> list = prodottoBibliotecariodao.getProductPerTitolo("mangiare");
+        System.out.println(list);
+
+      //  System.out.println(list);
 
         // ho creato una query in lIBRO e creato il metodo getlibroPerAnno nella rispettiva classe Dao
         // con il fine di cercare i prodotti per autore
 
       //  libroDao.getLibroPerAutore("disney").stream().forEach(c-> System.out.println(c));
 }
-
-
 
 }

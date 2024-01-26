@@ -10,7 +10,7 @@ import java.util.List;
 @Table(name = "prodotto_bibliotecario")
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 @NamedQuery(name="getProductPerAnnoPubblicazione", query="select c from ProdottoBibliotecario c where year(c.annoPubblicazione) = :anno")
-@NamedQuery(name="getLibroPerTitolo", query="select l from Libro l where upper(l.titolo) like upper(concat('%',:titolo, '%'))")
+@NamedQuery(name="getLibroPerTitolo", query="select p from ProdottoBibliotecario p where upper(p.titolo) like upper(concat('%',:titolo, '%'))")
 public abstract class  ProdottoBibliotecario {
 
     @Id
